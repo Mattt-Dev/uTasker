@@ -1,0 +1,3 @@
+<form method="POST" action="{{ url_for('main.delete_task', task_id=task.id) }}">
+                            <button type="submit" class="btn btn-danger" onclick="return confirmDelete()">Delete</button>
+                        </form>

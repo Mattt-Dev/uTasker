@@ -1,0 +1,63 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+  font-family: Kanit;
+  background-color: rgb(210, 117, 62);
+  overflow-y: overlay;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(156, 77, 60);
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: rgb(249, 248, 240);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(239, 174, 100);
+}
+
+#footer-nav li {
+  list-style: none;
+}
+
+.navbar-logo:hover {
+  color: rgb(239, 174, 100);
+}
+
+.centered-item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-submit {
+  color: white;
+  background-color: rgb(45,45,42);
+  border-color: rgb(45,45,42);
+}
+
+.btn-submit:hover {
+  background-color: rgb(210, 117, 62);
+  border-color: rgb(210, 117, 62);
+}
+
+.admin a {
+  text-decoration: none;
+  color: white;
+}
+
+.register {
+  background-color: white;
+  padding: 20px;
+}
+
+.register a{
+    color: rgb(123, 58, 57);
+}

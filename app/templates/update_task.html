@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+New Task
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container mt-5 register" style="width: 350px; margin-top: 100px; color: rgb(45,45,42);">
+    <h5 class="mb-4">Update task.</h5>
+    <form method="POST" action="{{ url_for('main.update_task', task_id=task.id) }}">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.title.label(class="form-control-label") }}<span style="color: red;"> *</span>
+            {{ form.title(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.description.label(class="form-control-label") }}<span style="color: red;"> *</span>
+            {{ form.description(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.status.label(class="form-control-label") }}<span style="color: red;"> *</span>
+            {{ form.status(class="form-control") }}
+        </div>
+        <div class="form-group text-center " style="margin-top: 30px;">
+            {{ form.submit(class="btn btn-primary btn-submit w-100") }}
+        </div>
+    </form>
+</div>
+
+{% endblock %}
